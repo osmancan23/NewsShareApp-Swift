@@ -1,14 +1,14 @@
 //
-//  NewsShareAppTests.swift
-//  NewsShareAppTests
+//  NewsShareApp_SwiftTests.swift
+//  NewsShareApp-SwiftTests
 //
-//  Created by Osmancan Akagündüz on 31.01.2024.
+//  Created by Osmancan Akagündüz on 12.02.2024.
 //
 
 import XCTest
-@testable import NewsShareApp
+@testable import NewsShareApp_Swift
 
-final class NewsShareAppTests: XCTestCase {
+final class NewsShareApp_SwiftTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

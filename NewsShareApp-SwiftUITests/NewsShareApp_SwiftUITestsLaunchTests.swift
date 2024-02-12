@@ -1,13 +1,13 @@
 //
-//  NewsShareAppUITestsLaunchTests.swift
-//  NewsShareAppUITests
+//  NewsShareApp_SwiftUITestsLaunchTests.swift
+//  NewsShareApp-SwiftUITests
 //
-//  Created by Osmancan Akagündüz on 31.01.2024.
+//  Created by Osmancan Akagündüz on 12.02.2024.
 //
 
 import XCTest
 
-final class NewsShareAppUITestsLaunchTests: XCTestCase {
+final class NewsShareApp_SwiftUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  NewsShareApp
+//  NewsShareApp-Swift
 //
-//  Created by Osmancan Akagündüz on 31.01.2024.
+//  Created by Osmancan Akagündüz on 12.02.2024.
 //
 
 import UIKit
