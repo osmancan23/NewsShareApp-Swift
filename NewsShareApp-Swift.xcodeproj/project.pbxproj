@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD5F51BC2C261CE200183495 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F51BB2C261CE200183495 /* LoginViewController.swift */; };
+		CD5F51BF2C26290300183495 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F51BE2C26290300183495 /* LoginView.swift */; };
 		CD8570A32B7A922D00C3A593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8570A22B7A922D00C3A593 /* AppDelegate.swift */; };
 		CD8570A52B7A922D00C3A593 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8570A42B7A922D00C3A593 /* SceneDelegate.swift */; };
 		CD8570A72B7A922D00C3A593 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8570A62B7A922D00C3A593 /* SplashViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD5F51BB2C261CE200183495 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CD5F51BE2C26290300183495 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CD85709F2B7A922D00C3A593 /* NewsShareApp-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NewsShareApp-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8570A22B7A922D00C3A593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD8570A42B7A922D00C3A593 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD5F51BA2C261CCD00183495 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CD5F51BD2C2628F300183495 /* View */,
+				CD5F51BB2C261CE200183495 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CD5F51BD2C2628F300183495 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD5F51BE2C26290300183495 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CD8570962B7A922D00C3A593 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +150,7 @@
 		CD8570D22B7A923600C3A593 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				CD5F51BA2C261CCD00183495 /* Login */,
 				CD8570D52B7A927E00C3A593 /* Splash */,
 			);
 			path = Feature;
@@ -309,9 +331,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5F51BF2C26290300183495 /* LoginView.swift in Sources */,
 				CD8570A72B7A922D00C3A593 /* SplashViewController.swift in Sources */,
 				CD8570D92B7A94E900C3A593 /* SplashView.swift in Sources */,
 				CD8570A32B7A922D00C3A593 /* AppDelegate.swift in Sources */,
+				CD5F51BC2C261CE200183495 /* LoginViewController.swift in Sources */,
 				CD8570A52B7A922D00C3A593 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
