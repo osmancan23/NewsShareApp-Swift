@@ -12,7 +12,7 @@ class TabbarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.setupTabs()
     }
     
 
@@ -25,5 +25,23 @@ class TabbarController: UITabBarController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func setupTabs()  {
+        let home = self.createTab(title: "Home", image: UIImage(systemName: "house"), vc: HomeViewController())
+        let search = self.createTab(title: "Search", image: UIImage(systemName: "magnifyingglass"), vc: SearchViewController())
+        let profile = self.createTab(title: "Profile", image: UIImage(systemName: "person"),
+                                     vc: ProfileViewController())
+        
+        self.setViewControllers([home,search,profile], animated: true)
+    }
+    
+    func createTab(title:String, image : UIImage?, vc: UIViewController) -> UINavigationController {
+        let navigationController = UINavigationController(rootViewController: vc)
+        
+        navigationController.tabBarItem.title = title
+        navigationController.tabBarItem.image  = image
+        
+        return navigationController
+    }
 
 }

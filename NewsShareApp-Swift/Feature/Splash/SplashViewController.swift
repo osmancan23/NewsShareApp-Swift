@@ -32,6 +32,7 @@ class SplashViewController: UIViewController {
 }
 
 extension SplashViewController : SplashViewProtocol {
+    
     func onTapGetStartedButton() {
         let loginView = LoginViewController()
         self.navigationController?.pushViewController(loginView, animated: true)

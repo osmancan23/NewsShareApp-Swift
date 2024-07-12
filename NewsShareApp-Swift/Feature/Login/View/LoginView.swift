@@ -8,7 +8,15 @@
 import Foundation
 import UIKit
 
+protocol LoginViewProtocol {
+    func onTapGoogleButton()
+    func onTapAppleButton()
+}
+
 class LoginView : UIView {
+
+    var delegate : LoginViewProtocol?
+
     private lazy var  imageView : UIImageView = {
         let image = UIImage(named: "splashImage")
         let imageView = UIImageView(image: image)
@@ -38,51 +46,9 @@ class LoginView : UIView {
          return label
      }()
      
-    private lazy var emailField :UITextField = {
-         let textField = UITextField()
-         textField.translatesAutoresizingMaskIntoConstraints = false
-         textField.placeholder = "Email"
-         textField.keyboardType = UIKeyboardType.emailAddress
-         textField.returnKeyType = UIReturnKeyType.done
-         textField.autocorrectionType = UITextAutocorrectionType.no
-         textField.font = UIFont.systemFont(ofSize: 13)
-         textField.textColor = .black
-         textField.borderStyle = UITextField.BorderStyle.roundedRect
-         textField.layer.borderWidth = 0.9
-         textField.layer.cornerRadius = 8
-         textField.clearButtonMode = UITextField.ViewMode.whileEditing;
-         textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
-        return textField
-     }()
-     
-     private lazy var passwordField :UITextField = {
-          let textField = UITextField()
-          textField.translatesAutoresizingMaskIntoConstraints = false
-          textField.placeholder = "Password"
-          textField.keyboardType = UIKeyboardType.emailAddress
-          textField.returnKeyType = UIReturnKeyType.done
-          textField.autocorrectionType = UITextAutocorrectionType.no
-          textField.font = UIFont.systemFont(ofSize: 13)
-          textField.textColor = .black
-          textField.borderStyle = UITextField.BorderStyle.roundedRect
-          textField.layer.borderWidth = 0.9
-          textField.layer.cornerRadius = 8
-          textField.clearButtonMode = UITextField.ViewMode.whileEditing;
-          textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
-         return textField
-      }()
-     
-     private lazy var loginButton : UIButton = {
-        let button = UIButton()
-         button.setTitle("Log In", for: .normal)
-         button.setTitleColor(.black, for: .normal)
-         button.translatesAutoresizingMaskIntoConstraints = false
-         button.backgroundColor = .clear
-         button.layer.cornerRadius = 10
-         button.layer.borderWidth = 1
-         button.layer.borderColor = UIColor.black.cgColor
-         return button
-     }()
+    lazy var googleAction : UIAction = UIAction { _ in
+        self.delegate?.onTapGoogleButton()
+    }
      
      private lazy var googleButton : UIButton = {
         let button = UIButton()
@@ -93,8 +59,13 @@ class LoginView : UIView {
          button.layer.cornerRadius = 10
          button.layer.borderWidth = 1
          button.layer.borderColor = UIColor.black.cgColor
+         button.addAction(googleAction, for: .touchUpInside)
          return button
      }()
+    
+    lazy var appleAction : UIAction = UIAction { _ in
+        self.delegate?.onTapAppleButton()
+    }
      
      private lazy var appleButton : UIButton = {
         let button = UIButton()
@@ -105,6 +76,7 @@ class LoginView : UIView {
          button.layer.cornerRadius = 10
          button.layer.borderWidth = 1
          button.layer.borderColor = UIColor.black.cgColor
+         button.addAction(appleAction, for: .touchUpInside)
          return button
      }()
      
@@ -112,22 +84,14 @@ class LoginView : UIView {
      
      private lazy var rowStackView : UIStackView = {
          let stackView = UIStackView()
+         stackView.axis = .vertical
          stackView.translatesAutoresizingMaskIntoConstraints = false
          stackView.distribution = .fillEqually
          stackView.spacing = 24
          return stackView
      }()
      
-     private lazy var registerTextButton : UIButton = {
-        let button = UIButton()
-         button.setTitle("Sign Up", for: .normal)
-         button.setTitleColor(.black, for: .normal)
-         button.translatesAutoresizingMaskIntoConstraints = false
-         button.backgroundColor = .clear
-      
-         return button
-     }()
-     
+    
     
     init() {
         super.init(frame: .zero)
@@ -135,15 +99,12 @@ class LoginView : UIView {
         self.addSubview(imageView)
         self.addSubview(titleLabel)
         self.addSubview(subtitleLabel)
-        self.addSubview(emailField)
-        self.addSubview(passwordField)
-        self.addSubview(loginButton)
+        
         
         rowStackView.addArrangedSubview(googleButton)
         rowStackView.addArrangedSubview(appleButton)
         
         self.addSubview(rowStackView)
-        self.addSubview(registerTextButton)
         
         
         imageView.snp.makeConstraints { make in
@@ -163,26 +124,7 @@ class LoginView : UIView {
             make.centerX.equalTo(titleLabel)
         }
         
-        emailField.snp.makeConstraints { make in
-            make.width.equalTo(250)
-            make.height.equalTo(45)
-            make.top.equalTo(subtitleLabel.snp.bottom).offset(20)
-            make.centerX.equalToSuperview()
-        }
-        
-        passwordField.snp.makeConstraints { make in
-            make.width.equalTo(250)
-            make.height.equalTo(45)
-            make.top.equalTo(emailField.snp.bottom).offset(20)
-            make.centerX.equalToSuperview()
-        }
-        
-        loginButton.snp.makeConstraints { make in
-            make.width.equalTo(300)
-            make.height.equalTo(45)
-            make.top.equalTo(passwordField.snp.bottom).offset(30)
-            make.centerX.equalToSuperview()
-        }
+       
         
         googleButton.snp.makeConstraints { make in
             make.width.equalTo(120)
@@ -193,17 +135,13 @@ class LoginView : UIView {
         }
         
         rowStackView.snp.makeConstraints { make in
-            make.width.equalTo(300)
-            make.height.equalTo(45)
-            make.top.equalTo(loginButton.snp.bottom).offset(30)
+            make.width.equalTo(250)
+            make.height.equalTo(150)
+            make.top.equalTo(subtitleLabel.snp.bottom).offset(50)
             make.centerX.equalToSuperview()
         }
         
-        registerTextButton.snp.makeConstraints { make in
-            make.top.equalTo(rowStackView.snp.bottom).offset(15)
-            make.centerX.equalToSuperview()
-        }
-        
+       
         
     }
     
