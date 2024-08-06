@@ -20,11 +20,13 @@
 		CD8570C62B7A922E00C3A593 /* NewsShareApp_SwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8570C52B7A922E00C3A593 /* NewsShareApp_SwiftUITestsLaunchTests.swift */; };
 		CD8570D92B7A94E900C3A593 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8570D82B7A94E900C3A593 /* SplashView.swift */; };
 		CD8570DC2B7A99DF00C3A593 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CD8570DB2B7A99DF00C3A593 /* SnapKit */; };
+		CDAA36F82C614FE500957A09 /* UserCountStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAA36F72C614FE500957A09 /* UserCountStackView.swift */; };
 		CDAAE8802C5122E100E8EF20 /* PopularNewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAAE87F2C5122E100E8EF20 /* PopularNewsCollectionViewCell.swift */; };
 		CDABBBB22C4141D5000058E0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDABBBB12C4141D5000058E0 /* HomeViewController.swift */; };
 		CDABBBBA2C4146BA000058E0 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDABBBB92C4146BA000058E0 /* TabbarController.swift */; };
 		CDABBBBE2C4147DF000058E0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDABBBBD2C4147DF000058E0 /* ProfileViewController.swift */; };
 		CDABBBC22C4147F9000058E0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDABBBC12C4147F9000058E0 /* SearchViewController.swift */; };
+		CDB439C72C62356D0058B17E /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB439C62C62356D0058B17E /* CustomButtonView.swift */; };
 		CDDAE01E2C5C077300509A2C /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDAE01D2C5C077300509A2C /* SearchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,11 +64,13 @@
 		CD8570C32B7A922E00C3A593 /* NewsShareApp_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsShareApp_SwiftUITests.swift; sourceTree = "<group>"; };
 		CD8570C52B7A922E00C3A593 /* NewsShareApp_SwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsShareApp_SwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CD8570D82B7A94E900C3A593 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		CDAA36F72C614FE500957A09 /* UserCountStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCountStackView.swift; sourceTree = "<group>"; };
 		CDAAE87F2C5122E100E8EF20 /* PopularNewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularNewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		CDABBBB12C4141D5000058E0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CDABBBB92C4146BA000058E0 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		CDABBBBD2C4147DF000058E0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CDABBBC12C4147F9000058E0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CDB439C62C62356D0058B17E /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		CDDAE01D2C5C077300509A2C /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +149,7 @@
 		CD8570A12B7A922D00C3A593 /* NewsShareApp-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				CDB439C42C62354E0058B17E /* UI */,
 				CD8570D42B7A924600C3A593 /* Common */,
 				CD8570D32B7A923F00C3A593 /* Base */,
 				CD8570D22B7A923600C3A593 /* Feature */,
@@ -223,6 +228,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CDAA36F62C614FAA00957A09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDAA36F72C614FE500957A09 /* UserCountStackView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CDAAE87E2C5122BF00E8EF20 /* PopularNewsCollectionCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,9 +284,26 @@
 		CDABBBBC2C4147BF000058E0 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				CDAA36F62C614FAA00957A09 /* View */,
 				CDABBBBD2C4147DF000058E0 /* ProfileViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		CDB439C42C62354E0058B17E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CDB439C52C6235560058B17E /* Button */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CDB439C52C6235560058B17E /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				CDB439C62C62356D0058B17E /* CustomButtonView.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		CDDAE01C2C5C076600509A2C /* View */ = {
@@ -421,6 +451,8 @@
 			files = (
 				CDABBBC22C4147F9000058E0 /* SearchViewController.swift in Sources */,
 				CDAAE8802C5122E100E8EF20 /* PopularNewsCollectionViewCell.swift in Sources */,
+				CDAA36F82C614FE500957A09 /* UserCountStackView.swift in Sources */,
+				CDB439C72C62356D0058B17E /* CustomButtonView.swift in Sources */,
 				CD5F51BF2C26290300183495 /* LoginView.swift in Sources */,
 				CDABBBBA2C4146BA000058E0 /* TabbarController.swift in Sources */,
 				CD8570A72B7A922D00C3A593 /* SplashViewController.swift in Sources */,

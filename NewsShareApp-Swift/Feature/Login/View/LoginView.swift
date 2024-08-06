@@ -51,14 +51,8 @@ class LoginView : UIView {
     }
      
      private lazy var googleButton : UIButton = {
-        let button = UIButton()
-         button.setTitle("Google", for: .normal)
-         button.setTitleColor(.black, for: .normal)
-         button.translatesAutoresizingMaskIntoConstraints = false
-         button.backgroundColor = .clear
-         button.layer.cornerRadius = 10
-         button.layer.borderWidth = 1
-         button.layer.borderColor = UIColor.black.cgColor
+        let button = CustomButtonView()
+         button.setup(title: "Google")
          button.addAction(googleAction, for: .touchUpInside)
          return button
      }()
@@ -68,14 +62,8 @@ class LoginView : UIView {
     }
      
      private lazy var appleButton : UIButton = {
-        let button = UIButton()
-         button.setTitle("Apple", for: .normal)
-         button.setTitleColor(.black, for: .normal)
-         button.translatesAutoresizingMaskIntoConstraints = false
-         button.backgroundColor = .clear
-         button.layer.cornerRadius = 10
-         button.layer.borderWidth = 1
-         button.layer.borderColor = UIColor.black.cgColor
+        let button = CustomButtonView()
+         button.setup(title: "Apple")
          button.addAction(appleAction, for: .touchUpInside)
          return button
      }()
