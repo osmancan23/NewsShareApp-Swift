@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD0DCEEA2C41A4940097754C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DCEE92C41A4940097754C /* HomeView.swift */; };
 		CD14A6F92C527C6C00833C65 /* NewReleaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD14A6F82C527C6C00833C65 /* NewReleaseTableViewCell.swift */; };
+		CD4D78712C66905300DF1193 /* CreateNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D78702C66905300DF1193 /* CreateNewsView.swift */; };
 		CD5F51BC2C261CE200183495 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F51BB2C261CE200183495 /* LoginViewController.swift */; };
 		CD5F51BF2C26290300183495 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F51BE2C26290300183495 /* LoginView.swift */; };
 		CD8570A32B7A922D00C3A593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8570A22B7A922D00C3A593 /* AppDelegate.swift */; };
@@ -20,6 +21,9 @@
 		CD8570C62B7A922E00C3A593 /* NewsShareApp_SwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8570C52B7A922E00C3A593 /* NewsShareApp_SwiftUITestsLaunchTests.swift */; };
 		CD8570D92B7A94E900C3A593 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8570D82B7A94E900C3A593 /* SplashView.swift */; };
 		CD8570DC2B7A99DF00C3A593 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CD8570DB2B7A99DF00C3A593 /* SnapKit */; };
+		CD8BBD3B2C6384BE0076771D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8BBD3A2C6384BE0076771D /* ProfileView.swift */; };
+		CD8BBD3E2C638A220076771D /* CreateNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8BBD3D2C638A220076771D /* CreateNewsViewController.swift */; };
+		CD8BBD412C6396F70076771D /* CustomDropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8BBD402C6396F70076771D /* CustomDropdownView.swift */; };
 		CDAA36F82C614FE500957A09 /* UserCountStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAA36F72C614FE500957A09 /* UserCountStackView.swift */; };
 		CDAAE8802C5122E100E8EF20 /* PopularNewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAAE87F2C5122E100E8EF20 /* PopularNewsCollectionViewCell.swift */; };
 		CDABBBB22C4141D5000058E0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDABBBB12C4141D5000058E0 /* HomeViewController.swift */; };
@@ -50,6 +54,7 @@
 /* Begin PBXFileReference section */
 		CD0DCEE92C41A4940097754C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CD14A6F82C527C6C00833C65 /* NewReleaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseTableViewCell.swift; sourceTree = "<group>"; };
+		CD4D78702C66905300DF1193 /* CreateNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewsView.swift; sourceTree = "<group>"; };
 		CD5F51BB2C261CE200183495 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CD5F51BE2C26290300183495 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CD85709F2B7A922D00C3A593 /* NewsShareApp-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NewsShareApp-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +69,9 @@
 		CD8570C32B7A922E00C3A593 /* NewsShareApp_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsShareApp_SwiftUITests.swift; sourceTree = "<group>"; };
 		CD8570C52B7A922E00C3A593 /* NewsShareApp_SwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsShareApp_SwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CD8570D82B7A94E900C3A593 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		CD8BBD3A2C6384BE0076771D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CD8BBD3D2C638A220076771D /* CreateNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewsViewController.swift; sourceTree = "<group>"; };
+		CD8BBD402C6396F70076771D /* CustomDropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDropdownView.swift; sourceTree = "<group>"; };
 		CDAA36F72C614FE500957A09 /* UserCountStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCountStackView.swift; sourceTree = "<group>"; };
 		CDAAE87F2C5122E100E8EF20 /* PopularNewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularNewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		CDABBBB12C4141D5000058E0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +114,14 @@
 				CD14A6F82C527C6C00833C65 /* NewReleaseTableViewCell.swift */,
 			);
 			path = NewReleaseTableCell;
+			sourceTree = "<group>";
+		};
+		CD4D786F2C66904400DF1193 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD4D78702C66905300DF1193 /* CreateNewsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CD5F51BA2C261CCD00183495 /* Login */ = {
@@ -179,6 +195,7 @@
 		CD8570D22B7A923600C3A593 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				CD8BBD3C2C638A060076771D /* CreateNews */,
 				CDABBBBC2C4147BF000058E0 /* Profile */,
 				CDABBBBB2C4147B8000058E0 /* Search */,
 				CDABBBB02C4141C6000058E0 /* Home */,
@@ -228,10 +245,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CD8BBD3C2C638A060076771D /* CreateNews */ = {
+			isa = PBXGroup;
+			children = (
+				CD4D786F2C66904400DF1193 /* View */,
+				CD8BBD3D2C638A220076771D /* CreateNewsViewController.swift */,
+			);
+			path = CreateNews;
+			sourceTree = "<group>";
+		};
+		CD8BBD3F2C6396E10076771D /* Dropdown */ = {
+			isa = PBXGroup;
+			children = (
+				CD8BBD402C6396F70076771D /* CustomDropdownView.swift */,
+			);
+			path = Dropdown;
+			sourceTree = "<group>";
+		};
 		CDAA36F62C614FAA00957A09 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				CDAA36F72C614FE500957A09 /* UserCountStackView.swift */,
+				CD8BBD3A2C6384BE0076771D /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,6 +328,7 @@
 		CDB439C42C62354E0058B17E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CD8BBD3F2C6396E10076771D /* Dropdown */,
 				CDB439C52C6235560058B17E /* Button */,
 			);
 			path = UI;
@@ -452,12 +488,16 @@
 				CDABBBC22C4147F9000058E0 /* SearchViewController.swift in Sources */,
 				CDAAE8802C5122E100E8EF20 /* PopularNewsCollectionViewCell.swift in Sources */,
 				CDAA36F82C614FE500957A09 /* UserCountStackView.swift in Sources */,
+				CD8BBD3E2C638A220076771D /* CreateNewsViewController.swift in Sources */,
 				CDB439C72C62356D0058B17E /* CustomButtonView.swift in Sources */,
 				CD5F51BF2C26290300183495 /* LoginView.swift in Sources */,
 				CDABBBBA2C4146BA000058E0 /* TabbarController.swift in Sources */,
 				CD8570A72B7A922D00C3A593 /* SplashViewController.swift in Sources */,
 				CD8570D92B7A94E900C3A593 /* SplashView.swift in Sources */,
 				CD0DCEEA2C41A4940097754C /* HomeView.swift in Sources */,
+				CD8BBD3B2C6384BE0076771D /* ProfileView.swift in Sources */,
+				CD4D78712C66905300DF1193 /* CreateNewsView.swift in Sources */,
+				CD8BBD412C6396F70076771D /* CustomDropdownView.swift in Sources */,
 				CD8570A32B7A922D00C3A593 /* AppDelegate.swift in Sources */,
 				CD5F51BC2C261CE200183495 /* LoginViewController.swift in Sources */,
 				CD14A6F92C527C6C00833C65 /* NewReleaseTableViewCell.swift in Sources */,
